@@ -19,7 +19,7 @@ compgen -A variable RWSOLS_ | while read v; do
 done
 
 #Settings RWSOLS_HASH for keyphrase
-RWSOLS_HASH=$(echo -n $PASSPHRASE | sha256sum | cut -d " " -f 1)
+RWSOLS_HASH=$(echo -n $PASSPHRASE | php /hash_pw.php)
 search_and_replace RWSOLS_HASH $RWSOLS_HASH
 
 

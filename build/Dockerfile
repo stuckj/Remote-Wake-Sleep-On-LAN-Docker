@@ -38,6 +38,7 @@ RUN a2enmod headers &&\
 
 COPY config.php /var/www/html/config.php
 COPY entrypoint.sh /
+COPY hash_pw.php /
 
 ENV APACHE2_PORT=80
 ENV PASSPHRASE=admin
