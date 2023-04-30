@@ -8,6 +8,7 @@ ENV DEBCONF_NONINTERACTIVE_SEEN true
 RUN apt-get -y update && \
     apt install -y  \
     apache2 \
+    curl \
     php \
     libapache2-mod-php \
     libcurl4-gnutls-dev \

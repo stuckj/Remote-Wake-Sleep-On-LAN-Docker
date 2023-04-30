@@ -2,9 +2,9 @@
 # Remote-Wake-Sleep-On-LAN-Docker
 A docker image of [sciguy14/Remote-Wake-Sleep-On-LAN-Server](https://github.com/sciguy14/Remote-Wake-Sleep-On-LAN-Server).
 
-Dockerhub: https://hub.docker.com/r/ex0nuss/remote-wake-sleep-on-lan-docker
+Forked from [https://github.com/ex0nuss/Remote-Wake-Sleep-On-LAN-Docker](https://github.com/ex0nuss/Remote-Wake-Sleep-On-LAN-Docker) which is no longer maintained. My only change was to include curl in the image since the newer ubuntu didn't have it installed by default (which breaks the sleep functionality).
 
-Weekly updated :)
+Dockerhub: https://hub.docker.com/r/stuckj/remote-wake-sleep-on-lan-docker
 
 ## Summary
 
