@@ -8,8 +8,8 @@ ENV DEBCONF_NONINTERACTIVE_SEEN true
 RUN apt-get -y update && \
     apt install -y  \
     apache2 \
-    curl \
     php \
+    php-curl \
     libapache2-mod-php \
     libcurl4-gnutls-dev \
     iputils-ping \
