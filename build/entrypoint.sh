@@ -19,8 +19,8 @@ compgen -A variable RWSOLS_ | while read v; do
 done
 
 #Settings RWSOLS_HASH for keyphrase
-APPROVED_HASH=$(echo -n $PASSPHRASE | sha256sum | cut -d " " -f 1)
-search_and_replace APPROVED_HASH $APPROVED_HASH
+RWSOLS_HASH=$(echo -n $PASSPHRASE | sha256sum | cut -d " " -f 1)
+search_and_replace RWSOLS_HASH $RWSOLS_HASH
 
 
 #APACHE2 port mapping

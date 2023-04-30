@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER stuckj
+MAINTAINER ex0nuss
 
 ## for apt to be noninteractive
 ENV DEBIAN_FRONTEND noninteractive
