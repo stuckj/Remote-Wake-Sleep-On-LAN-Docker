@@ -26,8 +26,8 @@ COPY ports.conf /etc/apache2/
 RUN a2enmod headers &&\
     service apache2 restart &&\
     mv -f Remote-Wake-Sleep-On-LAN-Server/apache2_configs/000-default_self-https.conf /etc/apache2/sites-available/000-default.conf &&\
-    sed -i.bak "s/expose_php = On/expose_php = Off/g" /etc/php/8.1/apache2/php.ini &&\
-    sed -i.bak "s/E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED/error_reporting = E_ERROR/g" /etc/php/8.1/apache2/php.ini &&\
+    sed -i.bak "s/expose_php = On/expose_php = Off/g" /etc/php/8.3/apache2/php.ini &&\
+    sed -i.bak "s/E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED/error_reporting = E_ERROR/g" /etc/php/8.3/apache2/php.ini &&\
     sed -i.bak "s/ServerSignature On/ServerSignature Off/g" /etc/apache2/conf-available/security.conf &&\
     sed -i.bak "s/ServerTokens OS/ServerTokens Prod/g" /etc/apache2/conf-available/security.conf &&\
     service apache2 restart &&\
